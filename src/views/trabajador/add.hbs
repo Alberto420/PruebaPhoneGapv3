@@ -1,0 +1,52 @@
+<div class="container p-4">
+    <div class="row">
+        
+        <div class="col-md-5 mx-auto">
+        <h1 class="text-center p-2 "><u>AGREGAR TRABAJADOR</u></h1>
+            <div class="card">
+                <script src="validar.js"></script>
+                <div class="card-body" style="primary">
+                    <form action="/trabajador/add" method="POST" onsubmit="return validarTrab();">
+                        
+                        <div class="form-group">
+                            
+                            <h6>Ingresa Nombre completo:</h6>
+                            <input type="text" name="nombre" class="form-control" placeholder="..." autofocus required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Ingresa Rut:</h6>
+                            <input type="text" name="rut" class="form-control" placeholder="..."required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Ingresa Edad:</h6>
+                            <input type="number" name="edad" class="form-control" placeholder="..."required>
+                        </div>
+                        <div class="form-group">
+                            <h6>Ingresa fecha de Ingreso:</h6>
+                            <input type="date" name="fecha_ingr" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                             <h6>Ingresa fecha de Egreso:</h6>
+                            <input type="date" name="fecha_egr" class="form-control"required>
+                        </div>
+                        <div class="form-group">
+                             <h6>Ingresa Salario</h6>
+                            <input type="number" name="salario" class="form-control" placeholder="..."required>
+                        </div>
+                        <div class="form-group">
+                             <h6>Ingresa Area de trabajo</h6>
+                            <input type="text" name="area_trabajo" class="form-control" placeholder="..."required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button class="btn btn-warning btn-block">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

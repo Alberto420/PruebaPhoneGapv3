@@ -1,0 +1,65 @@
+#.-PASO 1
+REQUISITOS BASICOS
+
+  GESTOR DE BASE DE DATOS    
+    -Si tiene un gestor de base de datos, importe el script.
+
+        ~database/test.sql
+
+    -No tiene un gestor de base de datos, siga los pasos mencionados a continuacion.
+
+        Uno de los caminos para poder levantar la base de datos es con XAMPP. 
+        link -> https://www.apachefriends.org/download.html
+
+        ¿Qué es XAMPP?
+        Un paquete de instalación independiente de plataforma, de software libre, enfocado en el sistema de gestión 
+        de bases de datos MySQL, el servidor web Apache y los intérpretes para lenguajes de script.
+        
+        Ya instalado en nuestro equipo, inicie el software llamado "XAMPP CONTROL PANEL", ya abierto el software
+        ejecute la acción "START" del modulo "APACHE" y "MySQL".
+        para entrar al gestor de BD ejecute "ADMIN" en el modulo "MySQL"y sera redireccionado.
+
+
+  EDITOR DE TEXTO
+    -Si tiene uno, solo importe la carpeta de este proyecto.
+       
+        ~proyectoV2
+
+    -No tiene un editor de texto.
+
+        Recomiendo Visual Studio Code ya que la creación del software se hizo en el.  
+        link -> https://code.visualstudio.com/
+
+    
+
+
+#.-PASO 2
+
+    $-ADVERTENCIA-$: Las siguientes intrucciones solo funcionaran habiendo completado los requisitos basicos, 
+                      no insista.
+
+EJECUTAR EL SOFTWARE
+    Abra su terminal favorita y ejecute el siguiente comando.
+ 
+        ~npm run dev
+
+    En caso de no funcionar, instale los modulos de node con el comando.
+
+        ~npm install
+    
+    Ya instalado, vuelva a ejecutar el primer comando.
+    
+    Le debe aparecer algo como esto en su terminal:
+        ~Servidor en puerto  4000
+        ~DB esta conectada
+
+VISUALIZAR EL SOFTWARE
+    Inicie su navegador favorito y ejecute en la barra URL lo siguiente.
+
+        ~http://localhost:4000/
+
+    Y por harte de magia negra aparecen las vistas del software.
+
+
+
+

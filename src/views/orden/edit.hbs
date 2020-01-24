@@ -1,0 +1,51 @@
+<div class="container p-4">
+    <h1 class="text-center p-2 "><u>MODIFICAR ORDEN DE TRABAJO</u></h1>
+    <div class="row">
+        <script src="validar.js"></script>
+        <div class="col-md-4 mx-auto">
+
+            <div class="card">
+                <div class="card-body">
+                    
+                    <form action="/orden/edit/{{orden.ID}}" method="POST" onsubmit="return validar();">
+                        <div class="form-group">
+                            <h5>Ingresa Fecha de Inicio:</h5>
+                            <input type="date" id="fecha_inicio" name="fecha_inicio" class="form-control"  autofocus required>
+                        </div>
+                        <div class="form-group">
+                            <h5>Ingresa Fecha de Entrega:</h5>
+                            <input type="date" id="fecha_entrega" name="fecha_entrega" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <h5>Ingresa Descipción:</h5>
+                            <input type="text" id="detalle" name="detalle" rows="2" class="form-control" placeholder="..." required>
+                            
+                        </div>
+                        <div class="radio">
+                            <h5>Ingresa Estado:</h5>
+                            <input type="radio" id="estado"name="estado" value="no_vigente"required>
+                            <label for="no_vigente">No Vigente</label>
+                            <input type="radio" name="estado" value="vigente">
+                            <label for="vigente">Vigente</label>
+                        </div>
+                        <div class="form-group">
+                            <h5>Ingresa Patente Cliente:</h5>
+                            <input type="text" id="patente_cli" name="patente_cli" class="form-control" placeholder="..." required>
+                        </div>
+                        <div class="form-group">
+                            <h5>Ingresa Trabajador Encargado:</h5>
+                            <input type="text" id="encargado" name="encargado" class="form-control" placeholder="..."required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button class="btn btn-warning btn-block">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
